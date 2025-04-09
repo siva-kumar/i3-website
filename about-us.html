@@ -41,99 +41,51 @@
             padding: 30px;
         }
 
-        .block-section {
-            &.left {
-                .media-section {
-                    video,
-                    img {
-                        margin-left: 0px !important;
-                    }
+        .about-us {
+            img {
+                width: 100%;
+            }
+        }
+
+        .company-legacy-container {
+            margin-left: 0px !important;
+        }
+
+        .company-legacy-slide {
+            flex: none !important;
+            margin: 10px !important;
+            width: 96% !important;
+        }
+
+        .our-ceo {
+            .text-section {
+                padding: 0px !important;
+            }
+
+            img {
+                width: 100% !important;
+            }
+
+            .col-8 {
+                padding-left: 15px !important;
+
+                .expertise {
+                    margin-top: 15px !important;
+                    font-size: 15px !important;
                 }
             }
         }
 
-        .media-section {
-            padding-top: 0px !important;
-        }
-
-        .build-ai-button {
-            margin-top: 170px !important;
-        }
-
-        .our-beliefs {
-            .col {
-                flex: auto !important;
-            }
-        }
-
-        .our-beliefs-container {
-            margin: 0px !important;
-        }
-
-        .engineering {
-            height: fit-content !important;
-
-            .product-slide {
-                margin-left: 0px !important;
-                flex: none !important;
-            }
-        }
-
-        .what-we-do {
-            height: fit-content !important;
-
-            .custom-tabs {
-                padding-top: 20px !important;
-            }
-
-            .slider-content {
-                margin: 0px !important;
-            }
-        }
-
-        .slide {
-            .pl-10 {
-                padding-left: 10px !important;
-            }
-
-            h3 {
-                margin-top: 20px !important;
-            }
-        }
-
-        .slider-image {
-            width: 100% !important;
-            margin-left: 0px !important;
-            padding: 0px !important;
-        }
-
-        .who-we-work {
-            height: fit-content !important;
-
-            .who-we-work-slide {
-                flex: none !important;
-                margin-left: 0px !important;
-            }
-        }
-
         .valley-proof {
-            height: fit-content !important;
-
             img {
                 width: 100%;
             }
         }
 
         .contact-us {
-            height: fit-content !important;
-
             h3 {
                 padding-top: 40px !important;
             }
-        }
-
-        .footer {
-            height: fit-content !important;
         }
     }
 </style>
@@ -153,334 +105,81 @@
 
     <!-- Navigation Links -->
     <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#what-we-do">Services</a></li>
-        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#" class="active">About Us</a></li>
         <li><a href="#">Career</a></li>
-        <li class="contact-button"><a href="#contact-us">Contact Us →</a></li>
+        <li class="contact-button"><a href="#">Contact Us →</a></li>
     </ul>
 </nav>
 
-<div class="row block-section build-ai left pt-5">
-    <div class="row">
-        <div class="col-md-6 text-section">
-            <h2>We Build Systems That Endure and Deliver Value</h2>
-            <p>With a 30+ year track record of real-world solutions, i3 now leverages AI to maximize strategic
-                impact-helping you build systems that scale, endure, and deliver immediate returns.</p>
-        </div>
-        <div class="col-md-6 media-section video">
-            <video
-                    id="ai-intro-video"
-                    muted
-                    loop
-                    controls
-                    src="./images/i3-hero-video.mp4"
-                    onended="videoEnd('ai-intro')"></video>
-            <img id="ai-intro-poster"
-                 src="./images/i3-hero-image.jpg"
-                 alt="i3 branding"
-                 onclick="posterClick('ai-intro')"
-                 onkeydown="{(e) => {
-                  if (e.keyCode === 13) posterClick('ai-intro');
-                }}"
-            />
-        </div>
+<div class="row block-section about-us pt-10">
+    <div class="col-md-12 text-center text-section pt-4">
+        <h2>Empowering Global Business with Intelligent Solutions</h2>
+        <p>At i3, our scalable AI transforms support and cash flow - empowering businesses to thrive.</p>
+
+        <img src="./images/about-us-hero-image.png" alt="About Us Intro">
+    </div>
+</div>
+
+<div class="row block-section company-legacy">
+    <div class="col-md-12 text-center text-section">
+        <h2>Over 30 Years of Innovation, Billions in Transactions, One Unwavering Commitment</h2>
+        <p>Building enduring relationships and delivering real-world impact since 1993.</p>
     </div>
 
-    <div class="row justify-content-center build-ai-button pt-10">
-        <div class="pl-0">
-            <a class="round-button" href="#contact-us">Let’s Build Something Strategic</a>
+    <div class="row company-legacy-container mx-15 g-3">
+        <div class="company-legacy-slide col">
+            <img src="./images/company-legacy/intro-image-1.png" alt="Years of Service"/>
+            <h3>30+ Years of Service</h3>
+            <p>A proven track record of reliability and adaptability.</p>
+        </div>
+
+        <div class="company-legacy-slide col">
+            <img src="./images/company-legacy/intro-image-2.png" alt="Billions in Transactions"/>
+            <h3>Billions in Transactions</h3>
+            <p>Trusted by enterprises worldwide to handle critical operations</p>
+        </div>
+
+        <div class="company-legacy-slide col">
+            <img src="./images/company-legacy/intro-image-3.png" alt="Loyalty">
+            <h3>Loyalty to Our Clients</h3>
+            <p>We prioritize long-term partnerships built on integrity and results.</p>
         </div>
     </div>
 </div>
 
-<div class="row block-section engineering">
-    <div class="row text-section">
-        <h2>30+ Years of Engineering Excellence</h2>
-        <p>We are there when enterprise needed scale, We're here now as AI demands precision.</p>
-    </div>
+<div class="row block-section our-ceo">
+    <div class="col-md-12 text-section">
+        <h2 class="text-center">Meet Our CEO</h2>
 
-    <div class="row g-3">
-        <div class="col product-slide">
-            <img src="./images/why-i3/why-i3-image-3.jpg" alt="Reliability"/>
-            <h3 class="col-md-12">Decades of Mission-Critical Reliability</h3>
-        </div>
-
-        <div class="col product-slide">
-            <img src="./images/why-i3/why-i3-image-2.jpg" alt="Financial Transactions"/>
-            <h3 class="col-md-12">$10s of Billions in Financial Transactions</h3>
-        </div>
-
-        <div class="col product-slide">
-            <img src="./images/why-i3/why-i3-image-1.jpg" alt="Healthcare Logistics"/>
-            <h3 class="col-md-12">Powering Healthcare Logistics</h3>
-        </div>
-    </div>
-
-    <div class="row text-section pt-4">
-        <h3>We Now Bring That Same Engineering Discipline into the AI Era</h3>
-    </div>
-
-    <div class="row justify-content pt-4">
-        <div class="col-auto">
-            <a class="round-button" href="#contact-us">Let’s Build Something Strategic</a>
-        </div>
-    </div>
-
-</div>
-
-<div class="row block-section our-beliefs">
-    <div class="row text-section">
-        <h2>Our Beliefs</h2>
-        <p>Quick insights into our innovative approach and lasting impact.</p>
-    </div>
-
-    <div class="row our-beliefs-container mx-15 g-3">
-        <div class="belief-slide col">
-            <img src="./images/our-belief/belief-image-1.png" alt="Engineering over hype"/>
-            <h3>Engineering over hype</h3>
-        </div>
-
-        <div class="belief-slide col">
-            <img src="./images/our-belief/belief-image-2.png" alt="Clarity over complexity">
-            <h3>Clarity over complexity</h3>
-        </div>
-
-        <div class="belief-slide col">
-            <img src="./images/our-belief/belief-image-3.png" alt="Build for long term">
-            <h3>Building for the long term</h3>
-        </div>
-    </div>
-</div>
-
-<div id="what-we-do" class="row block-section what-we-do">
-    <div class="row text-section">
         <div class="row">
-            <div class="col-md-10">
-                <h2 class="mb-0">What We Build</h2>
-                <p class="mt-0">Solutions designed to drive efficiency and empower growth.</p>
-            </div>
-            <div class="col-md-2 view-all">
-                <button class="round-button">View All</button>
-            </div>
-        </div>
-
-        <div class="row what-we-do-slider">
-            <div class="custom-tabs">
-                <button class="tab-btn active" data-index="0">Strategic Systems</button>
-                <button class="tab-btn" data-index="1">Custom AI Systems</button>
-                <button class="tab-btn" data-index="2">SmashSupport.AI</button>
-                <button class="tab-btn" data-index="3">Valley-Proof</button>
-            </div>
-
-            <div class="slider-content">
-                <div class="col-md-12 slide active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="slider-image" src="./images/what-we-do/what-we-do-image-2.jpg"
-                                 alt="SmashSupport.AI"/>
-                        </div>
-                        <div class="col-md-8 pl-10">
-                            <h3>Strategic Systems</h3>
-                            <p>We design and implement large-scale, long-term solutions that align AI capabilities with
-                                your business vision. From enterprise architecture to strategic roadmapping, we build integrated systems that
-                                stand the test of time.</p>
-
-                            <p class="ideal">Ideal For:</p>
-                            <ul>
-                                <li>Enterprises seeking holistic, future-proof solutions</li>
-                                <li>Organizations needing alignment between technology and business strategy</li>
-                                <li>Leaders who value sustainable, data-driven growth</li>
-                            </ul>
-
-                            <div class="row justify-content pt-2">
-                                <div class="col-auto">
-                                    <button class="round-button">Discuss Your Strategy</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 mx-auto d-flex ceo-container">
+                <div class="col-4">
+                    <img src="./images/ceo.jpg" alt="Frank Garcia"/>
                 </div>
+                <div class="col-8">
+                    <h4>Frank Garcia</h4>
+                    <p>Founder and CEO</p>
+                    <p class="expertise">Combining decades of expertise with a commitment to innovation and lasting
+                        impact.</p>
 
-                <div class="col-md-12 slide">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="slider-image" src="./images/what-we-do/what-we-do-image-1.jpg"
-                                 alt="Custom AI Systems"/>
-                        </div>
-                        <div class="col-md-8 pl-10">
-                            <h3>CUSTOM AI SYSTEMS</h3>
-                            <p>We choose a handful of high-impact projects each year-from healthcare optimization to
-                                financial reconciliation and decision support. If you need scale, speed, or clarity,
-                                we're
-                                interested.</p>
-
-                            <p class="ideal">Ideal For:</p>
-                            <ul>
-                                <li>Enterprises seeking tailored, strategic AI solutions</li>
-                                <li>Organizations with complex, mission-critical needs</li>
-                            </ul>
-
-                            <div class="row justify-content pt-2">
-                                <div class="col-auto">
-                                    <button class="round-button">Let’s Talk AI</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 slide">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="slider-image" src="./images/what-we-do/what-we-do-image-2.jpg"
-                                 alt="SmashSupport.AI"/>
-                        </div>
-                        <div class="col-md-8 pl-10">
-                            <h3>SmashSupport.AI</h3>
-                            <p>An AI support agent that cut support volume by 90% for Smash Your Fitness-integrated,
-                                cost-saving, and fast, with built-in brand protection.</p>
-
-                            <p class="ideal">Ideal For:</p>
-                            <ul>
-                                <li>Startups scaling support</li>
-                                <li>Mid-size companies frustrated with clunky ticketing systems</li>
-                                <li>Organizations seeking better customer experience at lower cost</li>
-                            </ul>
-
-                            <div class="row justify-content pt-2">
-                                <div class="col-auto">
-                                    <button class="round-button">Learn About SmashSupport.AI</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 slide">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img class="slider-image" src="./images/what-we-do/what-we-do-image-3.jpg"
-                                 alt="Valley Proof"/>
-                        </div>
-                        <div class="col-md-8 pl-10">
-                            <h3>Valley-Proof</h3>
-                            <p>Cash flow systems for founders who can’t afford mistakes. Forged through decades of
-                                market volatility, it’s a toolset and mindset for staying liquid when it matters most.
-                                Launching as a SaaS and book in 2025.</p>
-
-                            <p class="ideal">Ideal For:</p>
-                            <ul>
-                                <li>Founders and small business leaders</li>
-                                <li>Organizations prioritizing precise cash flow management</li>
-                            </ul>
-
-                            <div class="row justify-content pt-2">
-                                <div class="col-auto">
-                                    <button class="round-button">Get Valley-Proof</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="ceo-social-icons pt-2">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
                     </div>
                 </div>
             </div>
-
-            <div class="dots">
-                <div class="arrow left" data-direction="prev">←</div>
-                <div class="dot active" data-index="0"></div>
-                <div class="dot" data-index="1"></div>
-                <div class="dot" data-index="2"></div>
-                <div class="dot" data-index="3"></div>
-                <div class="arrow right" data-direction="next">→</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row block-section language-translator">
-    <div class="row text-section">
-        <h2>Your Gateway to Global Business</h2>
-        <p class="introduction">Introducing Universal Language Translator - Your Key to Borderless Business</p>
-    </div>
-
-    <div class="row translator-description mt-4">
-        <div class="col-md-6">
-            <p class="pt-1">Communicate globally with our AI Universal Language Translator, delivering instant, accurate
-                text and
-                voice translations.</pclass>
-
-            <ul class="mt-5">
-                <li><b>Real-Time Translations:</b> Instant text & voice results</li>
-                <li><b>Seamless Integration:</b> Easily add translation features</li>
-                <li><b>Global Collaboration:</b> Boost outreach and teamwork</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <img src="./images/universal-language-image.jpg" alt="Universal Language Translator"/>
-        </div>
-    </div>
-
-    <div class="row justify-content pt-5">
-        <div class="col-auto">
-            <button class="round-button">Start Translating</button>
-        </div>
-    </div>
-</div>
-
-<div class="row block-section who-we-work">
-    <div class="row text-section">
-        <h2>Who We Work With</h2>
-        <p class="introduction">We don’t do volume. We do alignment.</p>
-    </div>
-
-    <div class="row g-3">
-        <div class="col who-we-work-slide">
-            <h3>Founders</h3>
-            <p>Boldly building resiliently through hard seasons</p>
-            <img src="./images/who-we-work/who-we-work-image-1.jpg" alt="Founders"/>
         </div>
 
-        <div class="col who-we-work-slide">
-            <h3>Product Leader</h3>
-            <p>Thoughtfully embedding AI with clear purpose</p>
-            <img src="./images/who-we-work/who-we-work-image-2.jpg" alt="Product Leader"/>
-        </div>
+        <p class="ceo-message-title"><b>A Message from Our CEO: </b></p>
 
-        <div class="col who-we-work-slide">
-            <h3>Operators</h3>
-            <p>Reducing costs and elevating customer experience</p>
-            <img src="./images/who-we-work/who-we-work-image-3.jpg" alt="Operators"/>
-        </div>
-    </div>
-
-    <div class="row">
-        <h4>Not For</h4>
-
-        <ul class="pt-2">
-            <li><b>Quick-Flip MVP Seekers:</b> Teams chasing short-term gains</li>
-            <li><b>Bolt-On Vendors:</b> Those who simply add AI without true transformation</li>
-        </ul>
-    </div>
-</div>
-
-<div class="row block-section ai-agent">
-    <div class="row g-5">
-        <div class="col-md-5">
-            <img src="./images/ai-agent-image.png" alt="AI agent"/>
-        </div>
-        <div class="col-md-7">
-            <h2>What are AI Agents, and Why Do You Need Them?</h2>
-
-            <p class="pt-5">AI agents automate tasks and <b>boost productivity</b> by up to 50%. Imagine a support agent
-                handling 80% of
-                routine inquiries instantly, letting your team <b>focus on complex challenges</b>.</p>
-
-            <div class="row justify-content pt-5">
-                <div class="col-auto">
-                    <button class="round-button">Join the AI Revolution</button>
-                </div>
-            </div>
-        </div>
+        <p class="ceo-message">"Hi, I'm Frank Garcia. Since founding Improvement Interactive in 1993, I've dedicated
+            myself to empowering
+            global business with innovative technology. I'm passionate about delivering intelligent solutions that truly
+            make a difference. Together, we are building a future where technology and human ingenuity propel success
+            worldwide."</p>
     </div>
 </div>
 
@@ -658,7 +357,7 @@
     </div>
 </div>
 
-<div class="row block-section contact-us" id="contact-us">
+<div id="contact-us" class="row block-section contact-us">
     <div class="row">
         <div class="col-md-6 text-section">
             <h2 class="mb-0">Let's Build Together</h2>
@@ -733,46 +432,6 @@
                     </p>
                 </form>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="row block-section clients">
-    <div class="row text-section text-center mb-4">
-        <h3>Trusted By The World's Most Ambitious Leaders</h3>
-    </div>
-
-    <div class="row client-slider">
-        <div class="logo mx-2">
-            <img src="./images/clients/crothal.png" alt="Crothal Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/carvana.png" alt="Carvana Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/compass.png" alt="Compass Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/aramark.png" alt="Aramark Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/shell.png" alt="Shell Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/intuit.png" alt="Intuit Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/tucson.png" alt="Tucson Logo"/>
-        </div>
-
-        <div class="logo mx-2">
-            <img src="./images/clients/taproot.png" alt="Taproot Logo"/>
         </div>
     </div>
 </div>
@@ -924,8 +583,6 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".what-we-do-slider").forEach(slider => new ContentSlider(slider));
-
         const slides = document.querySelectorAll('.client-testimonial');
         const testimonialPages = document.querySelectorAll('.testimonial-page');
 
